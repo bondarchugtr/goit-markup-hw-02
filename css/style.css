@@ -1,10 +1,51 @@
 
 
+:root{
+    --primary-white-color: #FFFFFF;
+    --logo-black-color: #000000;
+    --logo-blue-color: #2196F3;
+    --nav-black-color:#212121;
+    --title-text-color:#2196F3;
+    --contacts-text-color:#757575;
+    --banner-color-background:#2F303A;
 
-
-body{
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF;
 }
 
+body{
+    
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-white-color);
+} 
+
+/* header */
+
+.logo{
+    color: var(--logo-black-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    
+}
+
+.site-nav .link{
+    color: var(--nav-blue-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var(--title-text-color);
+}
+
+.site-nav .contacts{
+    color:var(--contacts-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.site-nav .contacts:hover,
+.site-nav .contacts:focus{
+    color: var(--title-text-color);
+}
