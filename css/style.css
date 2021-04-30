@@ -1,25 +1,31 @@
 
 
 :root{
+    --main-text-color:#757575;
     --primary-white-color: #FFFFFF;
     --logo-black-color: #000000;
     --logo-blue-color: #2196F3;
-    --nav-black-color:#212121;
-    --title-text-color:#2196F3;
-    --contacts-text-color:#757575;
+    --title-black-color:#212121;
+    --accent-text-color:#2196F3;
     --banner-color-background:#2F303A;
 
+}
+ul{
+    list-style: none;
 }
 
 body{
     
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-white-color);
+    color: var(--main-text-color);
+
 } 
 
-/* header */
+/* header site nav*/
 
 .logo{
+    
     color: var(--logo-black-color);
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -27,7 +33,13 @@ body{
     
 }
 
+.weblogo{
+
+    color: var(--logo-blue-color);
+}
+
 .site-nav .link{
+
     color: var(--nav-blue-color);
     font-weight: 500;
     font-size: 14px;
@@ -35,11 +47,17 @@ body{
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
-    color: var(--title-text-color);
+
+    color:var(--accent-text-color);
+}
+.site-nav .link.current{
+    color: var(--accent-text-color);
 }
 
+
 .site-nav .contacts{
-    color:var(--contacts-text-color);
+
+    color: var(--contacts-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -47,5 +65,40 @@ body{
 
 .site-nav .contacts:hover,
 .site-nav .contacts:focus{
-    color: var(--title-text-color);
+
+    color: var(--acent-text-color);
+}
+
+/* Main */
+
+/* Hero */
+
+.hero-title{
+
+    color: var(--primary-white-color);
+}
+
+
+/* Section */
+
+.section-title{
+
+color:var(--title-black-color);
+}
+
+/* Features */
+
+.feature-list .title{
+    color: var(--title-black-color);
+}
+
+
+/* Button */
+
+.button{
+
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-text-color);
+
 }
