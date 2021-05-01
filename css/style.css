@@ -8,10 +8,15 @@
     --title-black-color:#212121;
     --accent-text-color:#2196F3;
     --banner-color-background:#2F303A;
+    --collor-rgb-footer:rgba(255, 255, 255, 0.6);
 
 }
+
 ul{
     list-style: none;
+}
+a{
+    text-decoration:none;
 }
 
 body{
@@ -19,6 +24,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-white-color);
     color: var(--main-text-color);
+   
 
 } 
 
@@ -102,3 +108,43 @@ color:var(--title-black-color);
     background-color: var(--accent-text-color);
 
 }
+
+/* Footer */
+
+.footer{
+    background-color: var(--banner-color-background);
+}
+
+.logo-footer{
+
+    color: var(--primary-white-color);
+
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.address-list .address{
+color: var(--collor-rgb-footer);
+}
+
+
+/* Portfolio page */
+
+.filters{
+    
+    color: var(--logo-black-color);
+}
+
+.filters:hover, 
+.filters:focus{
+    background-color: var(--accent-text-color);
+    color: var(--primary-white-color);
+}
+
+.portfolio-list .portfolio-title{
+    color: var(--logo-black-color);
+}
+
+
