@@ -18,7 +18,7 @@ ul{
 
 a{
     text-decoration:none;
-    cursor: default;
+    /* cursor: default; */
 }
 
 body{
@@ -26,6 +26,8 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-white-color);
     letter-spacing: 0.03em;
+    font-size: 14px;
+    
    
 
 } 
@@ -38,8 +40,7 @@ body{
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.19;
-
-    
+ 
 }
 
    
@@ -49,17 +50,16 @@ body{
     color: var(--logo-blue-color);
     font-size: 26px;
     line-height: 1.19;
-
-    
+   
 }
 
     
 
-.site-nav .link{
+.site-nav .link, 
+.site-nav .contacts{
 
-    color: var(--nav-blue-color);
+    color: var(--title-black-color);
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
 
 }
@@ -70,21 +70,18 @@ body{
     color:var(--accent-text-color);
 
 }
+
 .site-nav .link.current{
     color: var(--accent-text-color);
 
-   
 }
 
 
 .site-nav .contacts{
 
-    color: var(--contacts-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    color: var(--main-text-color);
 
-}
+} 
 
 .site-nav .contacts:hover,
 .site-nav .contacts:focus{
@@ -95,13 +92,20 @@ body{
 /* Main */
 
 /* Hero */
+.hero{
+    background-color: var(--banner-color-background);
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+}
 
 .hero-title{
 
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -114,11 +118,11 @@ body{
   
     color: var(--primary-white-color);
     background-color: var(--accent-text-color);
+    position: absolute;
     width: 200px;
     height: 50px;
     left: 700px;
     top: 430px;
-
     cursor: pointer;
 
 
@@ -139,15 +143,14 @@ body{
 /* Features */
 
 .feature-list .title{
+
     color: var(--title-black-color);
-    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
 .feature-list .text{
 
-    font-size: 14px;
     line-height: 1.71px;
 
 }
@@ -174,6 +177,7 @@ body{
 
 .footer{
     background-color: var(--banner-color-background);
+    
 }
 
 .logo-footer{
@@ -187,25 +191,24 @@ body{
     
 }
 
-.address-name{
+.address-name, 
+.address-list .data{
 
     color: var(--primary-white-color);
-    font-size: 14px;
     line-height: 1.71;
+    font-style: normal;
 
     
 }
 .address-list .data{
+
     color: var(--collor-rgb-footer);
-    font-size: 14px;
-    line-height: 1.71;
-
     
-
 }
 
 .address-list .data:hover,
 .address-list .data:focus{
+
     color: var(--accent-text-color);
 }
 
@@ -215,6 +218,12 @@ body{
 
 .filters{
     color: var(--logo-black-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
     cursor: pointer;
 
     
