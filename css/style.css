@@ -65,29 +65,15 @@ body{
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus{
+.site-nav .link:focus{ color:var(--accent-text-color); }
 
-    color:var(--accent-text-color);
-
-}
-
-.site-nav .link.current{
-    color: var(--accent-text-color);
-
-}
+.site-nav .link.current{ color: var(--accent-text-color); }
 
 
-.site-nav .contacts{
-
-    color: var(--main-text-color);
-
-} 
+.site-nav .contacts{ color: var(--main-text-color); } 
 
 .site-nav .contacts:hover,
-.site-nav .contacts:focus{
-
-    color: var(--accent-text-color);
-}
+.site-nav .contacts:focus{ color: var(--accent-text-color); }
 
 /* Main */
 
@@ -149,11 +135,7 @@ body{
     text-transform: uppercase;
 }
 
-.feature-list .text{
-
-    line-height: 1.71px;
-
-}
+.feature-list .text{ line-height: 1.71px; }
 
 
 
@@ -175,10 +157,7 @@ body{
 
 /* Footer */
 
-.footer{
-    background-color: var(--banner-color-background);
-    
-}
+.footer{ background-color: var(--banner-color-background); }
 
 .logo-footer{
 
@@ -200,17 +179,10 @@ body{
 
     
 }
-.address-list .data{
-
-    color: var(--collor-rgb-footer);
-    
-}
+.address-list .data{ color: var(--collor-rgb-footer); }
 
 .address-list .data:hover,
-.address-list .data:focus{
-
-    color: var(--accent-text-color);
-}
+.address-list .data:focus{ color: var(--accent-text-color); }
 
 
 
