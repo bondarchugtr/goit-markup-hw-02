@@ -216,7 +216,7 @@ body{
 .filters{
     color: var(--title-black-color);
     background: var(--background-filters-color);
-
+    font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
