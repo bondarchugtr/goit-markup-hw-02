@@ -9,7 +9,9 @@
     --accent-text-color:#2196F3;
     --banner-color-background:#2F303A;
     --collor-rgb-footer:rgba(255, 255, 255, 0.6);
-
+    --color-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    --background-Button-hero: #188CE8;
+    --background-filters-color:#F5F4FA;
 }
 
 ul{
@@ -80,10 +82,6 @@ body{
 /* Hero */
 .hero{
     background-color: var(--banner-color-background);
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
 }
 
 .hero-title{
@@ -100,19 +98,36 @@ body{
 
 /* Button */
 
+
+
+
+
 .button{
-  
+
+    background: var(--accent-text-color);
+    box-shadow: var(--color-box-shadow);
     color: var(--primary-white-color);
-    background-color: var(--accent-text-color);
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    left: 700px;
-    top: 430px;
-    cursor: pointer;
+    
+    font-style: 400;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.87;
 
-
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
+
+
+.button:hover,
+.button:focus{
+
+    background: var(--background-Button-hero);
+    box-shadow: var(--color-box-shadow);
+    border-radius: 4px;
+}
+
 
 
 /* Section */
@@ -131,12 +146,22 @@ body{
 .feature-list .title{
 
     color: var(--title-black-color);
+    font-style: 400;
+    font-weight: 900;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
-.feature-list .text{ line-height: 1.71px; }
-
+.feature-list .text{ 
+    
+    color: var(--main-text-color);
+    font-style: 400;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+    
 
 
 .command-list .title{
@@ -167,7 +192,6 @@ body{
     font-size: 26px;
     line-height: 1.19;
 
-    
 }
 
 .address-name, 
@@ -177,7 +201,6 @@ body{
     line-height: 1.71;
     font-style: normal;
 
-    
 }
 .address-list .data{ color: var(--collor-rgb-footer); }
 
@@ -188,8 +211,11 @@ body{
 
 /* Portfolio page */
 
+
+
 .filters{
     color: var(--logo-black-color);
+    background: var(--background-filters-color);
 
     font-weight: 500;
     font-size: 16px;
@@ -197,17 +223,18 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-
+    /* border: 0; */
     
 }
+
 
 .filters:hover, 
 .filters:focus{
     
     background-color: var(--accent-text-color);
     color: var(--primary-white-color);
-    
 }
+
 
 .portfolio-list .portfolio-title{
 
@@ -217,17 +244,14 @@ body{
     font-size: 18px;
     line-height: 2;
 
-    
-    
 }
 
 .portfolio-list .text{
     
+    color: var(--main-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
 
-    
-   
 }
 
