@@ -87,7 +87,7 @@ body{
 .hero-title{
 
     color: var(--primary-white-color);
-    font-weight: 900;
+    font-weight: 700;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
@@ -109,7 +109,7 @@ body{
     color: var(--primary-white-color);
     
     font-style: 400;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
 
@@ -147,7 +147,7 @@ body{
 
     color: var(--title-black-color);
     font-style: 400;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -240,7 +240,7 @@ body{
 
     color: var(--logo-black-color);
     
-    font-weight: 900;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
 
