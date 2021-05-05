@@ -214,7 +214,7 @@ body{
 
 
 .filters{
-    color: var(--logo-black-color);
+    color: var(--title-black-color);
     background: var(--background-filters-color);
 
     font-weight: 500;
