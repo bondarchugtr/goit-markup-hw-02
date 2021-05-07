@@ -1,5 +1,12 @@
 
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 :root{
     --main-text-color:#757575;
     --primary-white-color: #FFFFFF;
@@ -28,13 +35,13 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--primary-white-color);
     letter-spacing: 0.03em;
-    font-size: 14px;
+    
     
    
 
 } 
 
-/* header site nav*/
+                    /*======PAGE HEADER======*/
 
 .logo{
     
@@ -45,7 +52,6 @@ body{
  
 }
 
-   
 
 .weblogo{
 
@@ -55,31 +61,43 @@ body{
    
 }
 
-    
 
-.site-nav .link, 
-.site-nav .contacts{
+.nav-list-item .link, 
+.list-item .contacts{
 
     color: var(--title-black-color);
     font-weight: 500;
+    font-size: 14px;
     line-height: 1.14;
-
+    letter-spacing: 0.02em;
+    
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus{ color:var(--accent-text-color); }
+.nav-list-item .link:hover,
+.nav-list-item .link:focus{ 
 
-.site-nav .link.current{ color: var(--accent-text-color); }
+    color:var(--accent-text-color);
+}
+
+.nav-list-item .link.current{ 
+    color: var(--accent-text-color); 
+}
 
 
-.site-nav .contacts{ color: var(--main-text-color); } 
+.list-item .contacts{ 
+    color: var(--main-text-color); 
+} 
 
-.site-nav .contacts:hover,
-.site-nav .contacts:focus{ color: var(--accent-text-color); }
+.list-item .contacts:hover,
+.list-item .contacts:focus{ 
+    color: var(--accent-text-color); 
+}
 
-/* Main */
 
-/* Hero */
+                    /*======END PAGE HEADER======*/
+
+                    /*====== HERO ======*/
+
 .hero{
     background-color: var(--banner-color-background);
 }
@@ -95,30 +113,19 @@ body{
     text-transform: uppercase;
 }
 
-
-/* Button */
-
-
-
-
-
 .button{
 
     background: var(--accent-text-color);
     box-shadow: var(--color-box-shadow);
     color: var(--primary-white-color);
-    
-    font-style: 400;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
 }
-
 
 .button:hover,
 .button:focus{
@@ -128,9 +135,10 @@ body{
     border-radius: 4px;
 }
 
+                 /*====== END HERO ======*/
 
 
-/* Section */
+                 /*====== SECTION-FEATURES ======*/
 
 .section-title{
 
@@ -141,30 +149,35 @@ body{
 
 }
 
-/* Features */
-
-.feature-list .title{
+.features-list .title{
 
     color: var(--title-black-color);
-    font-style: 400;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
-.feature-list .text{ 
+.features-list .text{ 
     
     color: var(--main-text-color);
-    font-style: 400;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
-    
+                    /*====== END SECTION-FEATURES ======*/
 
 
+                    /*====== SECTION-WORK ======*/
+
+
+                    /*====== END SECTION-WORK ======*/
+
+
+                    /*====== SECTION-COMMAND ======*/
+           
 .command-list .title{
+
     color: var(--logo-black-color);
     font-weight: 500;
     font-size: 16px;
@@ -178,16 +191,19 @@ body{
     line-height: 1.18px;
     text-align: center;
 }
+                    /*====== END SECTION-COMMAND ======*/
 
 
-/* Footer */
+                    /*====== FOOTER ======*/
 
-.footer{ background-color: var(--banner-color-background); }
+.footer{ 
+
+    background-color: var(--banner-color-background); 
+}
 
 .logo-footer{
 
     color: var(--primary-white-color);
-
     font-family: Raleway, sans-serif;
     font-size: 26px;
     line-height: 1.19;
@@ -202,26 +218,29 @@ body{
     font-style: normal;
 
 }
-.address-list .data{ color: var(--collor-rgb-footer); }
+.address-list .data{ 
+    color: var(--collor-rgb-footer); 
+}
 
 .address-list .data:hover,
-.address-list .data:focus{ color: var(--accent-text-color); }
+.address-list .data:focus{ 
+
+    color: var(--accent-text-color); 
+}
+
+                    /*====== END FOOTER ======*/
 
 
 
-/* Portfolio page */
-
-
+                /*====== SECTION PORTFOLIO ======*/
 
 .filters{
     color: var(--title-black-color);
     background: var(--background-filters-color);
-    font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
     cursor: pointer;
 }
 
@@ -252,4 +271,6 @@ body{
     line-height: 1.87;
 
 }
+
+                    /*====== END SECTION PORTFOLIO ======*/
 
